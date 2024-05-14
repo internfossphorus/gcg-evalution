@@ -60,6 +60,13 @@ $utilities: map-merge(
         
         values: $spacers
     ),
+    "font-size": (
+        responsive: true,
+        property:font-size,
+        class: fs,
+        values: 19px
+    ),
+    
   )
 );
 

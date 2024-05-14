@@ -222,4 +222,16 @@ body {
 }
 
 /*  Hero CSS End  */
+
+/* About Css Start  */
+.about__app .animated__text {
+    right: 12px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--dark-blue);
+    transform: rotate(90deg);
+    bottom: 195px;
+
+}
+/* About Css Start  */
+
 /*  Main CSS End  */
