@@ -20,6 +20,9 @@ $spacers: (
   8: $spacer * 4.5,
   9: $spacer * 5.5,
   10: $spacer * 6,
+  11: $spacer * 6.5,
+  12: $spacer * 7,
+  13: $spacer * 7.5,
 );
 
 
@@ -53,6 +56,13 @@ $utilities: map-merge(
         
         values: $spacers
     ),
+    "padding-t": (
+      responsive: true,
+      property: padding-top,
+      class: pt,
+      
+      values: $spacers
+  ),
     "padding-e": (
         responsive: true,
         property: padding-right,

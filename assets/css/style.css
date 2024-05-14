@@ -3,7 +3,7 @@
 
 
 
-body { 
+body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -11,9 +11,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-:root { 
-    --dark-blue:#014c84;
-    --light-blue:#0867af;
+:root {
+    --dark-blue: #014c84;
+    --light-blue: #0867af;
 }
 
 /* configuration fonts */
@@ -21,6 +21,7 @@ body {
     font-family: 'JostBold';
     src: url('../fonts/Jost/static/Jost-Bold.ttf') format('woff2');
 }
+
 @font-face {
     font-family: 'JostLight';
     src: url('../fonts/Jost/static/Jost-Light.ttf') format('woff2');
@@ -31,41 +32,59 @@ body {
     src: url('../fonts/Oswald/static/Oswald-Bold.ttf') format('woff2');
 }
 
+@font-face {
+    font-family: 'OswaldMedium';
+    src: url('../fonts/Oswald/static/Oswald-Regular.ttf') format('woff2');
+}
+
 
 /* configuration fonts */
 
 /* Utitlity Css  */
-.JostBold { 
-    font-family: 'JostBold',sans-serif;
+.JostBold {
+    font-family: 'JostBold', sans-serif;
 }
-.JostLight { 
-    font-family: 'JostLight',sans-serif;
+
+.JostLight {
+    font-family: 'JostLight', sans-serif;
 }
-.OswaldBold { 
-    font-family: 'OswaldBold',sans-serif;
+
+.OswaldBold {
+    font-family: 'OswaldBold', sans-serif;
 }
+.OswaldMedium {
+    font-family: 'OswaldMedium', sans-serif;
+}
+
 .bg-dark-blue {
     background-color: var(--dark-blue);
 }
+
 .text-dark-blue {
     color: var(--dark-blue);
 }
+
 .bg-light-blue {
     background-color: var(--light-blue);
 }
+
 .text-light-blue {
     color: var(--light-blue);
 }
+
 .text-hover {
     transition: all 0.6s ease-in-out;
 }
+
 .text-hover:hover {
     color: var(--dark-blue);
 }
+
 .-top-86px {
     top: -86px;
     z-index: 100;
 }
+
 .button-style-1 {
     border: 3px solid var(--light-blue);
     position: relative;
@@ -83,7 +102,7 @@ body {
     clip-path: polygon(0 0, 62% 0, 100% 100%, 0 100%);
 }
 
-.button-style-1 i { 
+.button-style-1 i {
     position: absolute;
     left: 20px;
     top: 19px;
@@ -93,7 +112,7 @@ body {
 
 .button-style-1:hover::after {
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .button-style-1:hover i {
@@ -115,26 +134,32 @@ body {
 .header__top__left {
     flex: 1;
 }
+
 .header__top__right {
-    flex: 1.7; 
+    flex: 1.7;
     z-index: 100;
     clip-path: polygon(0 0, 101% 0, 100% 100%, 4% 100%);
     gap: 2rem;
 }
-.header__top__right .career-button { 
+
+.header__top__right .career-button {
     height: 44px;
 }
+
 .header__main {
     top: -40px;
 }
+
 .header__main .navbar-brand {
     top: -18px;
 }
+
 .divider-line {
     width: 2px;
     height: 30px;
     background-color: #286797;
 }
+
 /*  Header Css End  */
 
 /*  Hero CSS START  */
@@ -144,6 +169,7 @@ body {
     top: 0px;
     height: 100%;
 }
+
 .hero__app img:nth-child(1) {
     max-width: 66.9vw;
     width: 100%;
@@ -157,6 +183,7 @@ body {
     padding-top: 10px;
     object-fit: cover;
 }
+
 .hero__image__left::after {
     content: '';
     position: absolute;
@@ -168,6 +195,7 @@ body {
     background-size: 100%;
     top: 1vh;
 }
+
 .hero__image__left::before {
     content: '';
     position: absolute;
@@ -180,6 +208,7 @@ body {
     right: -6vw;
     z-index: -1;
 }
+
 .hero__content {
     top: 43%;
     left: 26%;
@@ -187,17 +216,20 @@ body {
 }
 
 .hero__content h5 {
-    color: transparent;  
-    -webkit-text-stroke: 2px white;  
+    color: transparent;
+    -webkit-text-stroke: 2px white;
     font-size: 100px;
 }
+
 .hero__content .second_text {
     font-size: 95px;
     line-height: 44px;
 }
+
 .hero__content h6:nth-child(3) {
     font-size: 100px;
 }
+
 .hero__content h6:nth-child(3)::after {
     content: '';
     position: absolute;
@@ -217,7 +249,8 @@ body {
     bottom: 42px;
     left: 22px;
 }
-.hero__content button { 
+
+.hero__content button {
     width: 250px;
 }
 
@@ -232,6 +265,57 @@ body {
     bottom: 195px;
 
 }
+
+
 /* About Css Start  */
+
+/* Excellence Css Start  */
+.excellence__app::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 160px;
+    background-color: var(--dark-blue);
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+    top: 209px;
+}
+.excellence__app { 
+    margin-bottom: 561px !important;
+}
+.excellence__image {
+    top: 309px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 59vw;
+    height: 55vh;
+}
+.excellence__image::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/excellenceLines.png);
+    left: -100px;
+    top: 78px;
+    z-index: -1;
+}
+.triangle__Box {
+    width: 269px;
+    height: 271px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: 97px;
+    left: -133px;
+}
+.triangle__Box h5 {
+    z-index: 1000;
+}
+.triangle__Box .triangle__box_inner {
+    width: 240px;
+    height: 252px;
+    background-color: var(--dark-blue);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/* Excellence Css Start  */
 
 /*  Main CSS End  */
