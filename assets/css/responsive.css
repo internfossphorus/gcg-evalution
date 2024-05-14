@@ -1,0 +1,18 @@
+@media (max-width:1600px) {
+    .slick-list.draggable { 
+        padding: 0px 295px !important;
+    }
+   
+    .join-us-vector-container-one img:nth-child(2) {
+        right: -168px;
+        object-fit: contain;
+        width: 779px;
+    }
+    .join-us-vector-container-one img:nth-child(1) {
+        left: -463px;
+        object-fit: contain;
+    }
+    .join-us-main-image {
+        max-width: 79vw;
+    }
+}
