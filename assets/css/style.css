@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+body { 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+:root { 
+    --dark-blue:#014c84;
+    --light-blue:#0867af;
+}
+
+/* configuration fonts */
+@font-face {
+    font-family: 'JostBold';
+    src: url('../fonts/Jost/static/Jost-Bold.ttf') format('woff2');
+}
+@font-face {
+    font-family: 'JostLight';
+    src: url('../fonts/Jost/static/Jost-Light.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'OswaldBold';
+    src: url('../fonts/Oswald/static/Oswald-Bold.ttf') format('woff2');
+}
+
+
+/* configuration fonts */
+
+/* Utitlity Css  */
+.JostBold { 
+    font-family: 'JostBold',sans-serif;
+}
+.JostLight { 
+    font-family: 'JostLight',sans-serif;
+}
+.OswaldBold { 
+    font-family: 'OswaldBold',sans-serif;
+}
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+.text-light-blue {
+    color: var(--light-blue);
+}
+.text-hover {
+    transition: all 0.6s ease-in-out;
+}
+.text-hover:hover {
+    color: var(--dark-blue);
+}
+.-top-86px {
+    top: -86px;
+    z-index: 100;
+}
+.button-style-1 {
+    border: 3px solid var(--light-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.button-style-1::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    background-color: var(--dark-blue);
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 62% 0, 100% 100%, 0 100%);
+}
+
+.button-style-1 i { 
+    position: absolute;
+    left: 20px;
+    top: 19px;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-style-1:hover::after {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+}
+
+.button-style-1:hover i {
+    left: 86%;
+}
+
+.button-style-1:hover span {
+    z-index: 10000;
+    color: white;
+}
+
+
+/* Utitlity Css  */
+
+
+/*  Main CSS Start  */
+
+/*  Header Css Start  */
+.header__top__left {
+    flex: 1;
+}
+.header__top__right {
+    flex: 1.7; 
+    z-index: 100;
+    clip-path: polygon(0 0, 101% 0, 100% 100%, 4% 100%);
+    gap: 2rem;
+}
+.header__top__right .career-button { 
+    height: 44px;
+}
+.header__main {
+    top: -40px;
+}
+.header__main .navbar-brand {
+    top: -18px;
+}
+.divider-line {
+    width: 2px;
+    height: 30px;
+    background-color: #286797;
+}
+/*  Header Css End  */
+
+/*  Hero CSS START  */
+.hero__image__left {
+    width: 50vw;
+    right: 7.4vw;
+    top: 0px;
+    height: 100%;
+}
+.hero__app img:nth-child(1) {
+    max-width: 66.9vw;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 75.4vh !important;
+}
+
+.hero__image__left img:nth-child(1) {
+    height: 76.2vh !important;
+    padding-top: 10px;
+    object-fit: cover;
+}
+.hero__image__left::after {
+    content: '';
+    position: absolute;
+    width: 34vw;
+    height: 27vw;
+    background-image: url(../images/hero-image-3.png);
+    background-repeat: no-repeat;
+    right: -11vw;
+    background-size: 100%;
+    top: 1vh;
+}
+.hero__image__left::before {
+    content: '';
+    position: absolute;
+    width: 15vw;
+    height: 10vw;
+    background-image: url(../images/hero-image-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0.8vh;
+    right: -6vw;
+    z-index: -1;
+}
+.hero__content {
+    top: 43%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__content h5 {
+    color: transparent;  
+    -webkit-text-stroke: 2px white;  
+    font-size: 100px;
+}
+.hero__content .second_text {
+    font-size: 95px;
+    line-height: 44px;
+}
+.hero__content h6:nth-child(3) {
+    font-size: 100px;
+}
+.hero__content h6:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    background-color: var(--light-blue);
+    bottom: 50px;
+    left: 0px;
+}
+
+.hero__content h6:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: var(--light-blue);
+    bottom: 42px;
+    left: 22px;
+}
+.hero__content button { 
+    width: 250px;
+}
+
+/*  Hero CSS End  */
+/*  Main CSS End  */
