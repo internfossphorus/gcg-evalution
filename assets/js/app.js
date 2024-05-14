@@ -3,8 +3,9 @@ $(document).ready(function () {
         centerMode: true,
         slidesToShow: 1,
         centerPadding:'500px',
-        dots:true
-        
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         
     });
 

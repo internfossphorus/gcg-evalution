@@ -95,9 +95,12 @@ body {
     border: 3px solid var(--light-blue);
     position: relative;
     overflow: hidden;
+    width: 300px;
 }
-
-.button-style-1::after {
+.button-style-1:hover { 
+    padding-left: 10px !important;
+}
+    .button-style-1::after {
     content: '';
     position: absolute;
     width: 80px;
@@ -362,16 +365,15 @@ a {
     margin-right: 100px; */
 }
 
-/* .previous-element  {
-    padding-right: 40px !important;
+.previous-element  .project_slides {
+    background-color: #e6f0f7;
 }
-.next-element  {
-    padding-left: 40px !important;
-} */
-/* .slick-current {
-    width: 903px !important;
-} */
-
+.previous-element  .project_slides h6 {
+    color: black !important;
+}
+.previous-element  .project_slides p { 
+    color: #000 !important;
+}
 .slick-dots {
     display: flex;
     justify-content: center;

@@ -3,16 +3,29 @@
         padding: 0px 295px !important;
     }
    
-    .join-us-vector-container-one img:nth-child(2) {
-        right: -168px;
+    .join-us-vector-container-one  img:nth-child(2) {
+        right: -212px;
         object-fit: contain;
         width: 779px;
+        height: 431px !important;
     }
     .join-us-vector-container-one img:nth-child(1) {
-        left: -463px;
+        left: -404px;
         object-fit: contain;
     }
     .join-us-main-image {
         max-width: 79vw;
+        height: 432px;
+    }
+    .join-us-content {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-19%, 21%);
+    }
+    .contact-us-animated-text {
+        right: -117px;
+
+    }
+    .previous-element {
+        
     }
 }
