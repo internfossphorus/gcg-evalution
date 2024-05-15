@@ -1,31 +1,118 @@
 @media (max-width:1600px) {
-    .slick-list.draggable { 
+    .slick-list.draggable {
         padding: 0px 295px !important;
     }
-   
-    .join-us-vector-container-one  img:nth-child(2) {
+
+    .join-us-vector-container-one img:nth-child(2) {
         right: -212px;
         object-fit: contain;
         width: 779px;
         height: 431px !important;
     }
+
     .join-us-vector-container-one img:nth-child(1) {
         left: -404px;
         object-fit: contain;
     }
+
     .join-us-main-image {
         max-width: 79vw;
         height: 432px;
     }
+
     .join-us-content {
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-19%, 21%);
     }
+
     .contact-us-animated-text {
         right: -117px;
 
     }
-    .previous-element {
-        
+
+    .previous-element {}
+}
+
+@media (max-width:992px) {
+    .header__top__left {
+        display: none;
+    }
+
+    .header__main {
+        top: 0px;
+        margin-bottom: 70px;
+    }
+
+    .hero__image__left {
+        display: none !important;
+    }
+
+    .hero__app img:nth-child(1),
+    .join-us-main-image {
+        max-width: 100vw;
+    }
+
+    .hero__content {
+        top: 50%;
+        left: 50%;
+    }
+
+    .excellence__image {
+        width: 63vw;
+        height: 42vh;
+    }
+
+    .join-us-vector-container-one {
+        display: none;
+    }
+    .join-us-content {
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-26%, 10%);
+    }
+    .slick-list.draggable { 
+        padding: 0px !important;
+    }
+    .clients__box__one,
+    .clients_box_two {
+        width: 100%;
+    }
+    .clients_box_two  .client_inner:nth-child(2){ 
+        top: -74px;
+    }
+    .clients_box_two .client_inner:nth-child(3) {
+        top: 32px;
+        left: 34%;
+    }
+    .clients__box__one .client_inner:nth-child(3) {
+        bottom: -39px;
+        left: 40%;
+    }
+    .clients__box__one .client_inner:nth-child(1) {
+        top: -40px;
+     }
+     .contact-us-animated-text {
+        bottom: 397px;
+        right: -131px;
+    }
+    
+}
+@media (max-width:450px) {
+    .header__top__app  {
+        display: none !important;
+    }
+    .navbar-brand img {
+        width: 181px;
+        height: 70px;
+    }
+    .hero__content h5,
+    .hero__content .second_text ,
+    .hero__content h6:nth-child(3)  
+    {
+        font-size: 54px;
+    }
+    .about__app .animated__text {
+        right: 32%;
+        transform: rotate(0deg);
+        bottom: 4px;
     }
 }

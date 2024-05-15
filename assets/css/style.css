@@ -482,22 +482,14 @@ a {
 }
 
 .contact-form {
-    border: 2px solid white;
     margin-top: 70px;
     z-index: 1000;
+    border: 10px solid; /* Adjust the width of the border as needed */
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to bottom, white 50%, #014780 50%);
 }
 
-.contact-form::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 44%;
-    border-left: 2px solid #014780;
-    border-bottom: 2px solid #014780;
-    border-right: 2px solid #014780;
-    bottom: 0px;
-    left: 1px;
-}
 
 .contact-form-inner {
     width: 98%;
@@ -546,6 +538,7 @@ a {
     bottom: 262px;
     right: -30px;
     z-index: 148;
+    
 }
 .contact-us-animated-text span { 
     color: transparent;

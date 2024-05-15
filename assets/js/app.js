@@ -4,8 +4,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         centerPadding:'500px',
         dots:true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         
     });
 
