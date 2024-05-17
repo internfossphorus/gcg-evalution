@@ -39,3 +39,28 @@ $(document).ready(function () {
     $('.slick-dots button').text('')
   
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.round__slider');
+    const boxes = document.querySelectorAll('.round__slider__Box');
+    const radius = slider.offsetWidth / 2;
+    const boxCount = boxes.length;
+    const angleStep = (2 * Math.PI) / boxCount;
+    let currentAngle = 0;
+
+    function positionBoxes() {
+        boxes.forEach((box, index) => {
+            const angle = currentAngle + index * angleStep;
+            const x = radius + (radius - 40) * Math.cos(angle) - (box.offsetWidth / 2);
+            const y = radius + (radius - 40) * Math.sin(angle) - (box.offsetHeight / 2);
+            box.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    }
+
+    document.getElementById('next-slide').addEventListener('click', () => {
+        currentAngle += angleStep;  // Move to the next slide
+        positionBoxes();
+    });
+
+    // Initial positioning of the boxes
+    positionBoxes();
+});
