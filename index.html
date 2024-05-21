@@ -210,63 +210,50 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="services ">
-            <div class="services_slider position-relative">
-              <div class="slider__box position-absolute">
-                <div class="circle--slider">
-                  <div class="rotate--circle">
-                    <ul class="circle--rotate" id="circle--rotate">
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-1.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-2.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-3.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-4.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-1.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-2.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-3.png" alt="" srcset="">
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                          <img src="./assets/images/slider-icon-4.png" alt="" srcset="">
-                        </div>
-                      </li>
-                    </ul>
-
-                    <div class="prev shadow d-flex justify-content-center align-items-center"><span>
-                      
-                      <i class="fa-solid fa-caret-down fs-5 text-white"></i>
-                    </span></div>
-                    <div class="next shadow d-flex justify-content-center align-items-center"><span>
-                        <i class="fa-solid fa-caret-up fs-5 text-white"></i>
-                      </span></div>
+            <div class="services_slider w-100 position-relative">
+              <div class="slider-wrapper position-absolute">
+                <div id="center" class="wrapper">
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-1.png" alt="" srcset="">
                   </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-2.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-3.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-2.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-4.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-1.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-2.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-3.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-4.png" alt="" srcset="">
+                  </div>
+                  <div class="item bg-white">
+                    <img src="./assets/images/slider-icon-1.png" alt="" srcset="">
+                  </div>
+                  
+                </div>
+                <div class="gcg-logo-box d-flex justify-content-center align-items-center shadow position-absolute bg-white rounded-circle">
+                  <img src="./assets/images/gulf-consulting-logo.png" alt="" srcset="">
                 </div>
               </div>
+              <div class="controls selection-off">
+                <div class="left d-flex justify-content-center align-items-center rounded-circle shadow selection-off" onclick="turnLeft()"><i class="fa-solid fa-angle-up"></i></div>
+                <div class="right d-flex justify-content-center align-items-center rounded-circle shadow selection-off" onclick="turnRight()"><i class="fa-solid fa-angle-down"></i></div>
+              </div>
+              
             </div>
           </div>
         </div>
