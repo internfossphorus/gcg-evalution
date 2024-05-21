@@ -64,3 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial positioning of the boxes
     positionBoxes();
 });
+
+
+// JavaScript to handle the slider functionality
+// document.addEventListener('DOMContentLoaded', () => {
+//     const h5 = document.querySelector('.servicesContent h5');
+//     setTimeout(() => {
+//         h5.style.animationPlayState = 'running';
+//     }, 100); // Delay start by 500ms
+// });
